@@ -1,0 +1,184 @@
+/* === Typewriter / Legal Pad Aesthetic === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --pad-bg: #f5f0e8;
+  --pad-line: #e0d8cc;
+  --ink: #1a1a2e;
+  --ink-faded: #4a4a5e;
+  --accent: #8b4513;
+  --accent-light: #c4956a;
+  --font-body: 'Courier New', 'Courier', 'IBM Plex Mono', 'Source Code Pro', monospace;
+  --font-heading: 'Courier New', 'Courier', 'IBM Plex Mono', monospace;
+  --max-w: 760px;
+  --line-h: 1.5rem;
+}
+
+html { font-size: 15px; scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--pad-bg);
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent calc(var(--line-h) - 1px),
+    var(--pad-line) calc(var(--line-h) - 1px),
+    var(--pad-line) var(--line-h)
+  );
+  color: var(--ink);
+  line-height: var(--line-h);
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 4rem;
+}
+
+/* === Container === */
+.container { max-width: var(--max-w); margin: 0 auto; padding: 0 1.25rem; }
+
+/* === Masthead === */
+.masthead {
+  text-align: center;
+  padding: 3rem 0 1.5rem;
+  border-bottom: 2px solid var(--ink);
+  margin-bottom: 0.5rem;
+}
+.masthead h1 {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.masthead p {
+  font-size: 0.8rem;
+  color: var(--ink-faded);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* === Timeline === */
+.timeline { position: relative; padding: 1rem 0; }
+
+/* === Entry === */
+.entry {
+  border-bottom: 1px solid var(--pad-line);
+  position: relative;
+  cursor: pointer;
+}
+.entry-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  transition: background 0.15s;
+}
+.entry-header:hover { background: rgba(139, 69, 19, 0.03); }
+.entry-date {
+  font-size: 0.7rem;
+  color: var(--ink-faded);
+  white-space: nowrap;
+  min-width: 6rem;
+  font-weight: 600;
+}
+.entry-type {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  font-weight: 700;
+  min-width: 3.5rem;
+}
+.entry-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  flex: 1;
+  transition: color 0.15s;
+}
+.entry:hover .entry-title { color: var(--accent); }
+.entry-expand {
+  font-size: 0.75rem;
+  color: var(--accent-light);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.entry.open .entry-expand { transform: rotate(45deg); }
+
+/* === Body (collapsible) === */
+.entry-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+.entry.open .entry-body {
+  max-height: none;
+}
+
+.entry-content {
+  padding: 0.25rem 0 1.5rem;
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+/* === TOC === */
+.entry-toc {
+  margin: 0.5rem 0 1rem;
+  padding: 0.5rem 1rem;
+  background: rgba(139, 69, 19, 0.04);
+  border-left: 2px solid var(--accent-light);
+  font-size: 0.75rem;
+}
+.entry-toc strong { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.entry-toc ol { margin: 0.25rem 0 0 1.25rem; }
+.entry-toc li { margin-bottom: 0.15rem; }
+.entry-toc a { color: var(--ink-faded); text-decoration: none; border-bottom: 1px dotted var(--pad-line); }
+.entry-toc a:hover { color: var(--accent); border-color: var(--accent); }
+
+/* === Content Typography === */
+.entry-content p { margin-bottom: 0.85rem; }
+.entry-content h2 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 1.25rem 0 0.5rem;
+  padding-top: 0.25rem;
+  border-top: 1px solid var(--pad-line);
+}
+.entry-content h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin: 0.75rem 0 0.35rem;
+}
+.entry-content ul, .entry-content ol { margin: 0 0 0.85rem 1.5rem; }
+.entry-content li { margin-bottom: 0.25rem; }
+.entry-content blockquote {
+  border-left: 2px solid var(--accent-light);
+  margin: 0.75rem 0;
+  padding: 0.35rem 0.75rem;
+  background: rgba(139, 69, 19, 0.03);
+  color: var(--ink-faded);
+  font-style: italic;
+  font-size: 0.78rem;
+}
+.entry-content hr {
+  border: none;
+  border-top: 1px solid var(--pad-line);
+  margin: 1rem 0;
+}
+.entry-content strong { font-weight: 700; }
+.entry-content em { font-style: italic; }
+
+/* === Footer === */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  color: var(--ink-faded);
+  font-size: 0.7rem;
+  border-top: 2px solid var(--ink);
+  margin-top: 2rem;
+}
+
+/* === Responsive === */
+@media (max-width: 640px) {
+  .entry-header { flex-wrap: wrap; gap: 0.25rem 0.5rem; }
+  .entry-date { min-width: auto; }
+  .entry-title { width: 100%; order: 1; }
+}

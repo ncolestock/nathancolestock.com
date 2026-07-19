@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nathan Colestock</title>
+<meta name="description" content="Nathan Colestock — pastor, head of school, writer.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="container">
+
+<div class="masthead">
+  <h1>Nathan Colestock</h1>
+  <p>Pastor at Christ the King Church, Stillwater, MN. Head of School at Valor Christian Classical Academy. Husband to Maddie, father to four.</p>
+</div>
+
+<div class="timeline" id="timeline"></div>
+
+<div class="footer">
+  <p>Nathan Colestock</p>
+</div>
+
+</div>
+
+<script>
+const data = [
+  {
+    date: 'December 2022', type: 'Devotional', title: 'Rivers Stand at Attention',
+    toc: ['The God Who Splits Seas', 'A Greater Sign', 'Application'],
+    body: `<blockquote><p>So when the people set out from their tents to pass over the Jordan with the priests bearing the ark of the covenant before the people&hellip; the waters coming down from above stood and rose up in a heap very far away&hellip; (Joshua 3:14&ndash;17, ESV)</p></blockquote>
+<h2>The God Who Splits Seas</h2>
+<p>What is Joshua 3:14&ndash;17 preaching to its first audience? <em>Yahweh has proven to you that He is with you and will be faithful to keep all of his promises to you. So go forward trusting Him as you take the land He has given you.</em></p>
+<p>God sets up this event as a test for Himself. He calls His shot beforehand to give the people a sure sign of His presence. The Jordan piling up can only be the result of God's intervention. They should have confidence that no battle will be too hard for the God who splits seas and stops rivers.</p>
+<h2>A Greater Sign</h2>
+<p>Believers today are recipients of signs even greater than the Jordan's waters heaping up. We have the whole canon of Scripture testifying to the greatest demonstration of God's commitment to dwell with his people: Golgotha. Upon the cross Christ demonstrated to us once and for all that God is with His people and will keep his promise to take us to the heavenly city one day.</p>
+<p>The theological message of this passage reads very similarly to Romans 8:32. <em>God, who did not spare his own Son but gave him up for us all, will graciously give us all things&mdash;including entrance to the land of the new earth.</em></p>
+<h2>Application</h2>
+<p>Brothers and sisters, the God who splits seas and stops rivers bore the splinters of the cross until His heart stopped so that our holy God could dwell with us a forgiven people. God's power on behalf of His people should fill us with confidence to sing, <em>"What then shall we say to these things? If God is for us, who can be against us?" (Romans 8:31)</em></p>`
+  },
+  {
+    date: 'April 2023', type: 'Essay', title: 'Is A Christmas Carol Christian?',
+    toc: ['Christmas', 'The Names', 'Biblical Allusions', 'The Theme', 'Scrooge\'s Journey'],
+    body: `<p>A close reading of Dickens&rsquo; classic reveals a thoroughly Christian story&mdash;not merely a sentimental tale about generosity.</p>
+<h2>Christmas</h2>
+<p>Why does Dickens choose to write a story about "keeping Christmas" to transform Scrooge on? He attaches the cheer to the true meaning of Christmas in Christ: <em>"I am sure I have always thought of Christmas time, when it has come round&mdash;apart from the veneration due to its sacred name and origin, if anything belonging to it can be apart from that&mdash;as a good time; a kind, forgiving, charitable, pleasant time."</em></p>
+<h2>The Names</h2>
+<p><strong>Ebenezer Scrooge.</strong> Ebenezer is "stone of help" from 1 Samuel 7:12. Scrooge is likely from "scruple," slang for a stingy person. <strong>Cratchets</strong> likely comes from "cratche," a Middle English word for "a cross or frame of timber." <strong>Jacob Marley</strong> likely comes from <em>marl</em>, an old term for "earth" or "soil." Perhaps this is why Dickens chooses the Biblical name "Jacob," who saw a way for angels to pass to and from the earth.</p>
+<h2>Biblical Allusions</h2>
+<p>Dickens weaves Scripture into the story at key moments: "No eye at all is better than an evil eye" (Matthew 5:29), Marley's transparent body alluding to 1 John 3:17, the Ghost of Christmas Present's exchange about the Sabbath (Mark 2:23&ndash;28), Scrooge resolving to "treasure up every word" (Luke 2:19), and "he took a child, and set him in the midst of them" (Mark 9:36).</p>
+<h2>The Theme</h2>
+<p>The theme of the book is desiring mercy instead of sacrifice&mdash;loving God by loving neighbor. Marley's ghost says, <em>"Mankind was my business. The common welfare was my business; charity, mercy, forbearance, and benevolence, were, all, my business."</em></p>
+<h2>Scrooge's Journey</h2>
+<p>The book follows a clear arc of repentance and faith. Stave 1: Scrooge starts an unbelieving sinner. Stave 2: He softens but does not repent. Stave 3: Scrooge repents of his sin. Stave 4: When confronted with death, he falls to his knees. Stave 5: Scrooge awakens a changed man and goes to church. The bells that ring out are celebrating his salvation.</p>`
+  },
+  {
+    date: '2023', type: 'Reflection', title: 'Buying a House in the Upside Down Kingdom',
+    toc: ['Two Paths', 'The Heart'],
+    body: `<h2>Two Paths</h2>
+<p>Maddie and I are working on buying a house right now. So as I studied this week, that was the circumstance right in front of me to live in this upside-down kingdom where the humble are great and self-denial is good for you.</p>
+<p>I could buy a small beat-up home so that I can use my extra money to contribute towards God's mission in the world. Imagine everything I could do with that for God's glory! Why would I be selfish and buy a larger home?</p>
+<p>Well, I could also buy a larger, nicer home as God's servant to my wife and children, providing us an ideal space to live and raise our children. I could spend more money on a house because I want it as a tool for family culture and hospitality. That would be self-sacrificial. Giving up financial flexibility for the sake of generous sharing.</p>
+<h2>The Heart</h2>
+<p>Of course, I could selfishly buy a larger home just because I want a master bath and a study. But I could buy a small house to serve myself&mdash;being stingy with the money God is providing because I am nervous about how much we will spend. Do you see? There is not always an obvious path of self-denial. It could be either path. What Jesus is after is a heart that serves others.</p>`
+  },
+  {
+    date: 'March 10, 2024', type: 'Sermon', title: 'Hail, King of the Jews! &mdash; Mark 15:1&ndash;20',
+    toc: ['Introduction', 'Sentenced by Pilate', 'Mocked by Soldiers', 'Scourged for Barabbas'],
+    body: `<h2>Introduction</h2>
+<p>G. K. Chesterton is famous for saying that it is one of the greatest pleasures in life to fight in a losing cause, and then not lose. That's what we see Jesus doing from his arrest on. God's pattern to bless his people is not that we increase from honor to more honor, but that we go from death to resurrection, from shame to glory. God loves a comeback.</p>
+<p><strong>Aim:</strong> That you would worship Jesus for his humility that led to exaltation.</p>
+<h2>Sentenced by Pilate</h2>
+<p>Jesus is sentenced by Pilate. The chief priests hustle Jesus over early in the morning before his supporters know what's going on. They accuse him of sedition&mdash;setting himself up as a king. Jesus responds, "You have said so," making the good confession that he is the king.</p>
+<p>Jesus would make Pilate's job easier if he would defend himself. But on this point, Jesus is fighting for a conviction too. He wants to be condemned. He's planning to die for the truth that Jesus is Christ the King. The weapons of his warfare are not carnal. Christ's humility and selflessness are mighty to throw down strongholds.</p>
+<h2>Mocked by Soldiers</h2>
+<p>The soldiers dress Jesus up like a king and mock him. But they mock Jesus with truth. Everything they say is true. They think they are mocking a pretend king, but they are really honoring a real king. They will one day bow the knee and confess what they unwittingly spoke in mockery: Jesus is King.</p>
+<h2>Scourged for Barabbas</h2>
+<p>The crowd chooses a murderer over the Son of God. This is the greatest injustice in history. And it is the ground of our salvation. Jesus became Barabbas for us&mdash;the guilty one set free, the innocent one condemned. He took the place of a rebel so that rebels could go free.</p>`
+  },
+  {
+    date: 'February 9, 2025', type: 'Sermon', title: 'Learning to Live in the Story &mdash; Ezra-Nehemiah Introduction',
+    toc: ['The Pattern', 'Our Place in the Story'],
+    body: `<h2>The Pattern</h2>
+<p>The story of Ezra-Nehemiah follows a repeating pattern: God gives a decree for building his kingdom. God's enemies attack. God gives victory, and his people consecrate themselves. In their faithfulness, God pours out blessing. And then faithfulness begets prosperity, and the people fall back into sin.</p>
+<p>This is the same pattern we see throughout Scripture&mdash;from Exodus to the judges to the kings. And it's the pattern of our own lives. God calls us, equips us, we face opposition, we trust him, he provides, we grow comfortable, and we drift.</p>
+<h2>Our Place in the Story</h2>
+<p>God called them out of exile in Persia to build his temple and city. Likewise, we have been called out of exile to sin and death so that we can build the church. We are promised persecution. But because God has made a new, better, stronger covenant with us, this chapter of the story will not end in tragedy. It will end with all things made new, the church as a spotless bride, and death swallowed up in victory.</p>
+<p>You have a part to play. God is calling you to return and rebuild. What role has he given you?</p>`
+  },
+  {
+    date: 'February 23, 2025', type: 'Sermon', title: 'All Hands on Deck &mdash; Ezra 1&ndash;2',
+    toc: ['The Prophecies Fulfilled', 'Cyrus\'s Decree', 'The Response'],
+    body: `<h2>The Prophecies Fulfilled</h2>
+<p>Ezra 1:1 tells us this happened "according to the Word of the Lord to Jeremiah." Jeremiah prophesied that the exile would last 70 years (Jeremiah 25:11&ndash;12). Daniel, reading Jeremiah, prayed and confessed the sins of the people. And now God stirs up Cyrus to fulfill what he also prophesied through Isaiah: that Cyrus would decree the rebuilding of Jerusalem (Isaiah 44:28&ndash;45:1).</p>
+<p>God is faithful to his promises. What he says, he does.</p>
+<h2>Cyrus's Decree</h2>
+<p>Cyrus's decree is remarkable: "The LORD, the God of heaven, has given me all the kingdoms of the earth, and he has charged me to build him a house at Jerusalem." A pagan king acknowledges Yahweh and charges God's people to go build. God can use anyone&mdash;even those who don't acknowledge him&mdash;to accomplish his purposes. The hearts of kings are in the Lord's hand (Proverbs 21:1).</p>
+<h2>The Response</h2>
+<p>The heads of the houses of Judah and Benjamin, the priests and the Levites&mdash;everyone whose spirit God had stirred&mdash;set out to rebuild the temple. But not everyone went. Some stayed behind. And that's okay. God calls some to go and some to give. Both are essential to the mission.</p>
+<p>Notice that the text records names&mdash;lots of them. God keeps track of who participates in his mission. Every person mattered. Every contribution was noted.</p>
+<p><strong>Application:</strong> God has a mission for you. Will you go? Will you give?</p>`
+  },
+  {
+    date: 'March 23, 2025', type: 'Sermon', title: 'From Fear to Faith Again &mdash; Ezra 3&ndash;5',
+    toc: ['Fear Stops the Work', 'From Fear to Faith'],
+    body: `<h2>Fear Stops the Work</h2>
+<p>These three chapters tell a story all of us have lived: from fear to faith back to faith again. In Ezra 3, the people gather, rebuild the altar, and lay the temple foundation. The response is mixed: the people shout for joy, but the old men weep aloud. Joy and mourning mingled together.</p>
+<p>Then opposition arrives. The enemies offer to help&mdash;a trick. Zerubbabel responds with wisdom: "You have nothing to do with us in building a house to our God." So the enemies discourage the people and make them afraid. Fear stops the work. Not enemy armies, not a lack of resources. Fear.</p>
+<h2>From Fear to Faith</h2>
+<p>Then the prophets Haggai and Zechariah begin to prophesy. God sends his word through them, and the people are stirred up. They start building again. Not because the circumstances changed, but because they heard from God. When questioned, they give a bold answer: "We are the servants of the God of heaven and earth."</p>
+<p><strong>Application:</strong> What has fear stopped you from building? God's word has the power to stir you from fear back to faith.</p>`
+  },
+  {
+    date: 'May 11, 2025', type: 'Sermon', title: 'From Faith to Favor &mdash; Ezra 6',
+    toc: ['The Search', 'The Decree', 'The Completion', 'The Passover'],
+    body: `<p><strong>Main Point:</strong> Although we never deserve God's favor, God does reward our faithfulness. So stay faithful, and wait on the Lord.</p>
+<h2>Scene 1: The Search</h2>
+<p>The enemies write to King Darius, trying to stop the building. But Darius orders a search of the royal archives&mdash;and they find Cyrus's decree exactly as the Jews had said. God didn't send an angel. He didn't strike the enemies dead. He simply let the truth come to light. A search in an archive. God works through ordinary means.</p>
+<h2>Scene 2: The Decree</h2>
+<p>Darius doesn't just confirm Cyrus's decree&mdash;he strengthens it. The expenses shall be paid from the royal treasury. God doesn't just provide for his people; he gives them more than they asked for. That's the nature of his grace.</p>
+<h2>Scene 3: The Completion</h2>
+<p>The temple is finished after years of opposition. It happened "by the command of the God of Israel and by decree of Cyrus, Darius, and Artaxerxes." God gets the glory. When the temple is finished, they dedicate it with joy. When God brings a season of building to completion, we should celebrate his faithfulness.</p>
+<h2>Scene 4: The Passover</h2>
+<p>The people celebrate Passover with joy. "The LORD had made them joyful." Their joy wasn't manufactured. It came from God. He turned the hearts of kings toward them, and he turned their own hearts toward worship.</p>`
+  },
+  {
+    date: 'June 1, 2025', type: 'Sermon', title: 'Win the World Through the Word &mdash; Ezra 7&ndash;8',
+    toc: ['The Man: Ezra', 'The Provision', 'The Journey', 'The Arrival'],
+    body: `<h2>The Man: Ezra</h2>
+<p>Ezra is a scribe skilled in the Law of Moses. But more than that, he had "set his heart to study the Law of the LORD, and to do it, and to teach his statutes and rules in Israel" (Ezra 7:10). Study. Do. Teach. That's the threefold pattern of a faithful minister of the Word. You cannot lead where you have not gone. You cannot teach what you have not lived.</p>
+<h2>The Provision</h2>
+<p>Artaxerxes gives Ezra everything he needs&mdash;gold, silver, vessels for the temple, authority to appoint magistrates. The king's generosity is remarkable. But the text is clear: "The hand of the LORD my God was on me." When God is with you, he provides for you.</p>
+<h2>The Journey</h2>
+<p>Ezra proclaims a fast. He is ashamed to ask the king for a military escort because he has told the king that "The hand of our God is for good on all who seek him." So they fast and pray, and God protects them on the journey.</p>
+<h2>The Arrival</h2>
+<p>When they arrive in Jerusalem, they deliver the silver and gold to the temple. They offer sacrifices. The Word of God has been brought back to the center of the city of God.</p>
+<p><strong>Application:</strong> How is your heart toward the Word? Have you set your heart to study it, to do it, and to teach it?</p>`
+  },
+  {
+    date: 'June 8, 2025', type: 'Sermon', title: 'Make War, Not Peace &mdash; Ezra 9&ndash;10',
+    toc: ['The Sin', 'The Response', 'The War'],
+    body: `<p>Satan tempted Jesus with peace: "All the kingdoms of the earth I will give you, if you bow down and worship me." Stop the fighting. Just make peace with me. Satan continues to tempt us the same way. One of the sins that characterizes Christians in our day is laying down our weapons when God takes up his.</p>
+<h2>The Sin</h2>
+<p>The people of Israel have intermarried with the peoples of the land. They have married women who worship other gods. This is the very sin that led to Solomon's downfall. And it didn't start with a decision to rebel. It started with friendships, business partnerships, little compromises that made the people comfortable with what God had forbidden.</p>
+<h2>The Response</h2>
+<p>When Ezra hears, he tears his garments and pulls hair from his head and beard. He falls on his knees and prays a prayer of confession, identifying with the sin of the people even though he himself has not sinned in this way. Sin is not just a personal matter. When the people of God sin, we all bear the consequences.</p>
+<h2>The War</h2>
+<p>The people's solution is drastic: they must put away their foreign wives and children. This is painful, costly obedience. Jesus said the same: "If your right hand causes you to sin, cut it off and throw it away." Sometimes following Jesus means making war on the sin in our lives, even when it's painful. Have you made peace with sin that God wants you to make war on?</p>`
+  },
+  {
+    date: 'July 20, 2025', type: 'Sermon', title: 'How Can I Start Building? &mdash; Nehemiah 1:1&ndash;2:8',
+    toc: ['Nehemiah Hears the Problem', 'Nehemiah Prays', 'Nehemiah Acts'],
+    body: `<h2>Nehemiah Hears the Problem</h2>
+<p>Nehemiah is in Susa, cupbearer to the king. His brother brings news: "The wall of Jerusalem is broken down, and its gates are destroyed by fire." Nehemiah sits down and weeps. He mourns for days. He fasts and prays. Before he does anything, he feels the weight of the problem.</p>
+<h2>Nehemiah Prays</h2>
+<p>Nehemiah's prayer is a model. He acknowledges who God is: "O LORD God of heaven, the great and awesome God who keeps covenant." He confesses the sins of Israel. He reminds God of his promises. And he prays for four months. He doesn't rush into action. He waits on God.</p>
+<h2>Nehemiah Acts</h2>
+<p>One day the king notices Nehemiah's sad face. This is dangerous. Nehemiah is afraid. He prays a quick "tee-up prayer" and answers the king. He asks to be sent to rebuild. The king grants his request and gives him letters of safe passage and resources from the royal forest.</p>
+<p><strong>Application:</strong> Pray first, pray persistently, then step out in faith when God opens the door.</p>`
+  },
+  {
+    date: 'August 24, 2025', type: 'Sermon', title: 'Who Can Stand Against Us? &mdash; Nehemiah 2:9&ndash;20',
+    toc: ['The Visible and Invisible Chariots', 'The Opposition', 'The Inspection', 'The Response'],
+    body: `<h2>The Visible and Invisible Chariots</h2>
+<p>Elisha's servant saw the army surrounding the city. Elisha prayed, "O Lord, open his eyes." The servant saw the hillside filled with horses and chariots of fire. If God is for us, who can be against us? That's the point of Nehemiah 2.</p>
+<h2>The Opposition</h2>
+<p>Sanballat and Tobiah are "very much displeased." Enemies of God's work always show up. They mock. They despise. They question. But Nehemiah doesn't engage. He simply says, "The God of heaven will make us prosper."</p>
+<h2>The Inspection</h2>
+<p>Nehemiah goes out by night to inspect the walls. He assesses the damage. He makes a plan. Wisdom: assess before you announce. Then he calls the people: "Let us rise up and build." They respond: "Let us rise up and build."</p>
+<h2>The Response</h2>
+<p>Sanballat mocks again: "What are these feeble Jews doing?" Nehemiah answers: "The God of heaven will make us prosper, and we his servants will arise and build, but you have no portion or right or claim in Jerusalem." The enemies have no claim on God's city.</p>`
+  },
+  {
+    date: '2025', type: 'Letter', title: 'Letter re: Protesting',
+    toc: ['Do Not Fear', 'Do Not Respond in Kind', 'Keep Worshipping', 'Pray for Your Enemies'],
+    body: `<p>While the saints of Cities Church gathered to worship, they were interrupted by protestors. They desecrated the worship of God, profaned the preaching of God's word, and intruded on the people of God.</p>
+<h2>Do Not Fear</h2>
+<p>If God commanded Joshua not to fear on his way into battle, surely we need not fear amid a noisy protest. If we stand with determination and belt out our hymns at the top of our lungs, our children will follow our lead.</p>
+<h2>Do Not Respond in Kind</h2>
+<p>Do not shout back. Do not return evil for evil. Our weapons are not of this world. Our battle is not against the people outside our doors; it is against the spiritual forces of evil that have deceived them.</p>
+<h2>Keep Worshipping</h2>
+<p>Keep singing. Keep listening to the Word. Keep praying. Do not let them steal our worship. The church has faced persecution for 2,000 years, and the most powerful response to opposition is to keep our eyes fixed on Jesus.</p>
+<h2>Pray for Your Enemies</h2>
+<p>The protestors are not our enemies; they are captives of the enemy. They need the gospel. Pray that God would open their eyes and grant them repentance.</p>`
+  },
+  {
+    date: 'November 2025', type: 'Sermon', title: 'Lessons from Nehemiah 3',
+    toc: ['The Memorial', 'The Literary Purpose', 'Lessons from the Builders'],
+    body: `<h2>The Memorial</h2>
+<p>I visited the new National World War I Memorial in Washington, DC. It's sobering and inspiring. On the back is an excerpt from Archibald McLeish: "We leave you our deaths. Give them their meaning." That's the effect of Nehemiah 3's list of names. It recounts their struggle to do what God gave them to do despite hardship and danger.</p>
+<h2>The Literary Purpose</h2>
+<p>Nehemiah 3 follows a regular pattern: a person's name, their provenance, their accomplishment, and comments. It's the same structure as the mighty men of David in 2 Samuel 23. The function is to celebrate those who risked their lives for the kingdom. Their names are recorded because they participated in God's work.</p>
+<h2>Lessons from the Builders</h2>
+<p>Eliashib the high priest rebuilt the Sheep Gate. The leaders led. The goldsmiths and perfumers worked outside their trade. Shallum and his daughters worked together&mdash;a family project. And the people repaired "in front of their own houses." They started with what was right in front of them.</p>
+<p><strong>Application:</strong> What is your name on? Find your section of the wall. Start in front of your own house.</p>`
+  },
+  {
+    date: '2025', type: 'Sermon', title: 'Pray Lots. Work Hard. &mdash; Nehemiah 4',
+    toc: ['The Nature of the Opposition', 'Nehemiah\'s Response', 'Encouragement'],
+    body: `<h2>The Nature of the Opposition</h2>
+<p>Sanballat and Tobiah mock: "What are these feeble Jews doing? If a fox goes up on what they are building, it will break down their stone wall!" The attack comes first as mockery. Then it escalates to threats. Sanballat conspires to fight against Jerusalem.</p>
+<h2>Nehemiah's Response</h2>
+<p>Nehemiah does two things: he prays, and he posts a guard. He takes the attack to God, then he sets the people by their clans with swords, spears, and bows. He prays as if everything depends on God and works as if everything depends on him. The people continue building with one hand and held his weapon with the other. Sword in one hand, shovel in the other. Build and fight at the same time.</p>
+<h2>Encouragement</h2>
+<p>Nehemiah encourages the people: "Do not be afraid of them. Remember the Lord, who is great and awesome, and fight for your brothers, your sons, your daughters, your wives, and your homes." Fight for the people you love. That's what makes the fight worth it.</p>`
+  },
+  {
+    date: 'April 5, 2026', type: 'Sermon', title: 'Jesus is King of Everything &mdash; Psalm 2 (Easter)',
+    toc: ['Why Preach Psalm 2 on Easter?', 'The Rulers Attack', 'The Father Laughs', 'The Resurrection Declares Him King', 'Serve and Take Refuge'],
+    body: `<p>Christ is Risen! He is risen indeed! That is the best news. Jesus Christ, the incarnate Son of God, suffered and died for the sins of his people. Three days later, he rose to life again. He ascended to the right hand of the Father, where he rules. Christ is King. Psalm 2 is all about this best of news.</p>
+<h2>Why Preach Psalm 2 on Easter?</h2>
+<p>Psalm 2 tells the story of Easter. Pilate and Herod and the Jewish rulers raged and plotted against the LORD and against his anointed (Acts 4:23-26). They did not want to submit to his reign. But God had the last laugh. At the resurrection, God declared that Jesus was his Son (Rom 1:6) and gave him all authority in heaven and on earth (Matt 28:18).</p>
+<p>Now we all have two choices: repent, kiss the Son, and take refuge in him. Or continue to rage and be irreversibly broken.</p>
+<h2>The Rulers Attack (vv. 1-3)</h2>
+<p>The early church quotes Psalm 2 and applies it directly to Herod, Pontius Pilate, the Gentiles, and Israel who gathered against Jesus. Hundreds of years before Jesus was born, God through David wrote Psalm 2 about this very moment. The nations raged. They plotted. And they failed. The Anointed One they killed did not stay dead.</p>
+<h2>The Father Laughs (vv. 4-6)</h2>
+<p>God laughs at the rulers who crucified Jesus. Not a funny ha-ha laugh. The laugh of a general whose trap worked perfectly. As Jesus dies, his enemies mock him. But all the while God laughs. They walk right into God's trap. Colossians 2:15 says Jesus put the cosmic forces of evil to open shame.</p>
+<p>If God can turn the murder of his Son into the salvation of the world, he can turn every evil you have ever experienced into your everlasting joy. Easter is the ultimate poke in the eye to every evil.</p>
+<h2>The Resurrection Declares Him King (vv. 7-9)</h2>
+<p>"You are my Son, today I have begotten you." Paul tells us in Acts 13 that "today" means the day God raised Jesus from the dead. The resurrection was Jesus' coronation. Romans 1:4 says Jesus was "declared to be the Son of God in power by his resurrection." We are not celebrating the day Jesus narrowly escaped death. We are celebrating the day Jesus was crowned king of the world and received all power to rule.</p>
+<h2>Serve and Take Refuge (vv. 10-12)</h2>
+<p>"Blessed are all those who take refuge in him." This is astonishingly good news. The fate of sinners is not sealed. There is hope for everyone who will submit, who will throw down their weapons, who will confess and repent. In Acts 13, after quoting Psalm 2, Paul says forgiveness of sins is proclaimed through Jesus. Come, take refuge in him. He is the King of everything.</p>`
+  },
+  {
+    date: '2026', type: 'Article', title: '321 Votes',
+    toc: ['The Difference 321 Votes Makes', 'The Challenge: Lay Some Bricks'],
+    body: `<h2>The Difference 321 Votes Makes</h2>
+<p>321 votes. That is how many votes my friend Tom Dippel lost his 2022 race for Minnesota State Senate District 41 by. If Tom had won, the DFL would not have the majority in the Minnesota Senate. In the last four years, those 321 votes gave Democrats the majority to pass the following:</p>
+<ul>
+<li>The PRO Act (HF1) wrote an unlimited right to abortion into state law.</li>
+<li>Trans Refuge / Gender-Affirming Care Act (HF146) made Minnesota a sanctuary for out-of-state minors seeking gender procedures.</li>
+<li>Conversion Therapy Ban (HF16) barred licensed counselors from helping minors or vulnerable adults.</li>
+<li>Recreational Marijuana (HF100) legalized adult-use cannabis.</li>
+<li>Paid Family and Medical Leave (HF2) created a mandatory state-run leave program.</li>
+<li>Driver's Licenses for Illegal Immigrants (HF4) allowed anyone to obtain a license regardless of status.</li>
+<li>100% Carbon-Free Electricity by 2040 (HF7) forced a costly green-energy mandate.</li>
+<li>The $72 Billion Budget and Tax Bill (HF1938) grew the state budget by 40%.</li>
+</ul>
+<p>That is the difference 321 votes make.</p>
+<h2>The Challenge: Lay Some Bricks</h2>
+<p>Christians in Minnesota should be fighting against all that sin and foolishness. We find ourselves like Nehemiah's men: sword in one hand, shovel in the other (Neh 4:17). Do not complain the wall is not built if you have not laid any bricks.</p>
+<p>It is easy to bemoan the insanity of the liberals. But angrily reading articles is not going to change election results. The trouble with conservatives is that we just want to live peaceful, quiet lives. Here is the truth: if you want your kids to live a peaceful quiet life in Minnesota, you are going to have to fight now.</p>
+<p>Go lay some bricks: knock on doors, call voters, endorse good candidates, put signs in your lawn.</p>`
+  }
+];
+
+const timeline = document.getElementById('timeline');
+
+data.forEach((item, index) => {
+  const entry = document.createElement('div');
+  entry.className = 'entry';
+
+  const header = document.createElement('div');
+  header.className = 'entry-header';
+
+  const dateSpan = document.createElement('span');
+  dateSpan.className = 'entry-date';
+  dateSpan.textContent = item.date;
+
+  const typeSpan = document.createElement('span');
+  typeSpan.className = 'entry-type';
+  typeSpan.textContent = item.type;
+
+  const titleSpan = document.createElement('span');
+  titleSpan.className = 'entry-title';
+  titleSpan.innerHTML = item.title;
+
+  const expandSpan = document.createElement('span');
+  expandSpan.className = 'entry-expand';
+  expandSpan.textContent = '+';
+
+  header.appendChild(dateSpan);
+  header.appendChild(typeSpan);
+  header.appendChild(titleSpan);
+  header.appendChild(expandSpan);
+
+  const bodyDiv = document.createElement('div');
+  bodyDiv.className = 'entry-body';
+
+  const content = document.createElement('div');
+  content.className = 'entry-content';
+
+  if (item.toc) {
+    const toc = document.createElement('div');
+    toc.className = 'entry-toc';
+    toc.innerHTML = '<strong>Contents</strong><ol>' +
+      item.toc.map(t => '<li><a href="#' + t.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+$/, '') + '">' + t + '</a></li>').join('') +
+      '</ol>';
+    content.appendChild(toc);
+  }
+
+  const bodyContent = document.createElement('div');
+  bodyContent.innerHTML = item.body;
+  content.appendChild(bodyContent);
+
+  bodyDiv.appendChild(content);
+  entry.appendChild(header);
+  entry.appendChild(bodyDiv);
+
+  header.addEventListener('click', () => {
+    entry.classList.toggle('open');
+    expandSpan.textContent = entry.classList.contains('open') ? '\u00d7' : '+';
+  });
+
+  timeline.appendChild(entry);
+});
+</script>
+</body>
+</html>
