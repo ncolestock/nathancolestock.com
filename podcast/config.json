@@ -9,7 +9,7 @@
   "owner_name": "Podcast Admin",
   "owner_email": "podcast@nathancolestock.com",
   "copyright": "All rights reserved",
-  "site_url": "https://nathancolestock.com",
+  "site_url": "https://raw.githubusercontent.com/ncolestock/nathancolestock.com/main",
   "feed_path": "podcast/feed.xml",
   "episodes_dir": "podcast/episodes",
   "artwork_path": "podcast/artwork.jpg"
