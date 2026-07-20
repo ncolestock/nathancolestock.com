@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+  <title>The Study</title>
+  <link>https://nathancolestock.com</link>
+  <language>en-us</language>
+  <copyright>All rights reserved</copyright>
+  <itunes:author>A Voice in the Wilderness</itunes:author>
+  <itunes:summary>Thoughts, readings, and reflections.</itunes:summary>
+  <description>Thoughts, readings, and reflections.</description>
+  <itunes:type>episodic</itunes:type>
+  <itunes:owner>
+    <itunes:name>Podcast Admin</itunes:name>
+    <itunes:email>podcast@nathancolestock.com</itunes:email>
+  </itunes:owner>
+  <itunes:explicit>no</itunes:explicit>
+  <itunes:category text="Religion &amp; Spirituality">
+    <itunes:category text="Christianity"/>
+  </itunes:category>
+  <itunes:image href="https://nathancolestock.com/podcast/artwork.jpg"/>
+  <lastBuildDate>Mon, 20 Jul 2026 00:29:11 +0000</lastBuildDate>
+</channel>
+</rss>

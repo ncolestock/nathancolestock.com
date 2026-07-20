@@ -1,0 +1,16 @@
+{
+  "title": "The Study",
+  "author": "A Voice in the Wilderness",
+  "description": "Thoughts, readings, and reflections.",
+  "language": "en-us",
+  "category": "Religion & Spirituality",
+  "subcategory": "Christianity",
+  "explicit": "no",
+  "owner_name": "Podcast Admin",
+  "owner_email": "podcast@nathancolestock.com",
+  "copyright": "All rights reserved",
+  "site_url": "https://nathancolestock.com",
+  "feed_path": "podcast/feed.xml",
+  "episodes_dir": "podcast/episodes",
+  "artwork_path": "podcast/artwork.jpg"
+}
